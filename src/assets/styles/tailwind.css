@@ -1,0 +1,90 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer components {
+    .btn-default {
+        @apply bg-green-600 text-white rounded-sm shadow-lg py-2 px-5 font-semibold tracking-wide;
+    }
+    .btn-outlined {
+        @apply bg-transparent text-green-600 border-2 border-green-600 rounded-sm shadow-lg py-2 px-5 font-semibold tracking-wide;
+    }
+    .btn-full {
+        @apply w-full;
+    }
+    .btn-disabled {
+        @apply bg-gray-300 text-white rounded-sm shadow-lg py-2 px-5;
+    }
+
+    .separator {
+        @apply w-full border-t border-gray-300 my-5;
+    }
+    .tab-title {
+        @apply border-b border-gray-300;
+    }
+    .link {
+        @apply py-2 px-5 bg-transparent m-0 hover:bg-transparent text-base rounded-none block;
+    }
+
+    .link.active {
+        @apply border-b-2 border-green-600;
+    }
+
+    .steps {
+        @apply w-10 h-10 bg-white border-gray-300 text-gray-300 border-2 rounded-full flex items-center justify-center mb-1;
+    }
+    .steps-active {
+        @apply w-10 h-10 bg-green-600 text-white rounded-full flex items-center justify-center
+    }
+
+    .audience-card {
+        @apply border-white border-2 bg-white rounded-sm shadow-lg p-5 cursor-pointer;
+    }
+
+    .audience-card .checkbox {
+        @apply w-5 h-5 border-gray-600 border-2 p-1 rounded-md mx-auto;
+    }
+
+    .audience-card-active {
+        @apply border-green-600 border-2 bg-white rounded-lg shadow-lg p-10 cursor-pointer;
+    }
+
+    .audience-card-active .checkbox {
+        @apply w-5 h-5 border-green-600 bg-green-600 border-2 p-1 rounded-md mx-auto;
+    }
+
+
+    .sidebar-logo {
+        @apply border-b border-gray-300 flex justify-center;
+    }
+
+    .sidebar-items {
+        @apply flex justify-center items-center flex-col text-center;
+    }
+
+    .active-count {
+        @apply text-green-600;
+    }
+
+    .section-title {
+        @apply text-black font-bold text-2xl mb-5 text-left;
+    }
+
+    .adset-card .title-container {
+        @apply flex justify-between mb-5;
+    }
+    .adset-card .title {
+        @apply text-lg font-bold;
+    }
+    .adset-card .benchmarks {
+        @apply grid grid-cols-2 gap-1 divide-x border-t border-b border-gray-300 mt-5 mb-10 py-5;
+    }
+    .adset-card .ad-audience li, .adset-card .ad-audience p {
+        @apply mb-2 text-base;
+    }
+    .adset-card .tick {
+        @apply text-green-600;
+    }
+}
