@@ -20,10 +20,10 @@ phases:
       - yarn test
       - echo Building...
       - yarn build
-  artifacts:
-    baseDirectory: build
-    files:
-      - "**/*"
-  cache:
-    paths:
-      - node_modules/**/*
+artifacts:
+  baseDirectory: build
+  files:
+    - "**/*"
+cache:
+  paths:
+    - node_modules/**/*
